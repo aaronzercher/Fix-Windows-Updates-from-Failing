@@ -1,0 +1,10 @@
+net stop bits
+net stop cryptsvc
+net stop wuauserv
+net stop msiserver
+Ren C:\Windows\SoftwareDistribution SoftwareDistribution.old
+Ren C:\Windows\System32\catroot2 Catroot2.old
+net start bits
+net start cryptsvc
+net start wuauserv
+net start msiserver
